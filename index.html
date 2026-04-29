@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+<meta charset="UTF-8">
+<title>Registro de Recorridos</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="app">
+
+<header class="topbar">
+
+<h1>🦺Registro de Recorridos Personal de SCRAP Planta6🦺</h1>
+
+<div class="acciones">
+
+<button id="btnExportar" class="btn-mini">📤 Exportar</button>
+
+</div>
+
+</header>
+
+
+<div class="scan-box">
+
+<input id="scanInput" placeholder="Escanee SAP ID..." autocomplete="off">
+
+</div>
+
+
+<div class="export-box">
+
+<label>Fecha:</label>
+<input type="date" id="fechaExport">
+
+</div>
+
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>FOTO</th>
+<th>FECHA</th>
+<th>SAP ID</th>
+<th>NOMBRE</th>
+<th>OCUPACIÓN</th>
+<th>ÁREA</th>
+<th>RECORRIDO</th>
+<th>SALIDA</th>
+<th>REGRESO</th>
+<th>DURACIÓN</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaBody"></tbody>
+
+</table>
+
+</div>
+
+
+
+<!-- MODAL CONTRASEÑA -->
+
+<div id="modalClave" class="modal oculto">
+
+<div class="modal-box">
+
+<h3>Ingrese contraseña</h3>
+
+<input type="password" id="inputClave">
+
+<div class="modal-btns">
+
+<button id="btnConfirmar">Confirmar</button>
+<button id="btnCancelar">Cancelar</button>
+
+</div>
+
+</div>
+
+</div>
+
+
+<footer class="credito">
+
+Elaborado por <b>Jonathan Garcia (10684608)</b>
+
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
